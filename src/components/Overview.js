@@ -4,11 +4,11 @@ const Overview = (props) => {
     const { tasks } = props;
   
     return (
-      <ul>
+      <ol>
         {tasks.map((task) => {
           return <li key={task.id}>{task.text}</li>;
         })}
-      </ul>
+      </ol>
     );
 };
 
